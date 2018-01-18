@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="description" content="Hakone Projects">
+<meta name="author" content="Claire Mckenzie">
+<meta name="A work in progress" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hakone Projects</title>
+
+<meta property="og:url" content="https://hakoneprojects.com" />
+<meta property="og:title" content="Hakone Projects" />
+
+<meta property="og:description" content="A work in progress" />
+<meta property="og:image" content="media/hp-splash.png" />
+
+<!-- imports -->
+
+<link rel="stylesheet" href="daisy.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9ZZLdJJ-0L3tlBgEmknAJCzYRgCoumNs&callback=initMap">
+</script>
+
+</head>
+
+<body>
+  <!-- title and ink video -->
+
+  <div id="title">
+    <video src="media/inkbkg.mov" loop autoplay id="bg-vid">
+          </video>
+    <h1 id="title-text">HAKONE <br> &nbsp;&nbsp;&nbsp;&nbsp;PROJECTS</h1>
+  </div>
+  <!-- introductions -->
+
+  <div id="introductions">
+    <h3 id="heading-text">INTRODUCTIONS</h3>
+  </div>
+
+
+  <div class="container-fluid" id="intro">
+
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-12 col-md-5" id="intro-image">
+
+        <img src="media/oni.jpg" alt="Me as a devil" id="oni">
+
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-7" id="intro-description">
+        <h3>Welcome to Hakone Projects, <span style="font-size: 17px">a work in progress.</span> </h3><br>
+
+        <p>
+          My name is Clarity, adapted from the orginal. My middle names are Marion Jones, after the athlete. My last name is Mckenzie, like the tartan. If you'd like to hear more or tell me something about yourself, please get in touch.
+        </p> <br>
+        <!-- social icons - rss, github, linked -->
+        <a href="feed.xml" target="_blank" class="icon">
+          <i class="fa fa-rss fa-2x" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</i></a>
+        <a href="https://github.com/ClarityMckenzie" target="_blank" class="icon">
+          <i class="fa fa-github-alt fa-2x" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</i> </a>
+        <a href="https://www.linkedin.com/in/claire-mckenzie-1b282178/" target="_blank" class="icon">
+          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a><br><br>
+
+        <form id="comment-form">
+          <textarea rows="3" cols="30" id="message" name="message"></textarea><br>
+          <input type="submit" id="submit">
+        </form>
+        <br>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- experiments -->
+  <div id="experiments">
+    <h3 id="heading-text">EXPERIMENTS</h3>
+  </div>
+
+  <div class="container-fluid" id="exp-placeholder">
+    <div class="row">
+      <img src="media/thinking.jpg" alt="girl thinking" id="girl-hypothesizing">
+      <h2> Hypothesizing... </h2>
+
+    </div>
+  </div>
+
+  <div id="ramblings">
+    <h3 id="heading-text">RAMBLINGS</h3>
+  </div>
+  <div class="container-fluid" id="ram-1">
+
+    <!-- ROBSON -->
+
+    <div class="container-fluid" id="ram-1-robson">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6" id="robson-description">
+          <h4> Muji on Robson, I've been waiting for you... </h4><br>
+          <img src="media/robson.jpg" alt="Robson Muji bag" id="robson-img">
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6" id="robson-map">
+
+          <div id="map">
+          </div>
+          <br>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <hr>
+    <!-- INSTAX -->
+
+    <div class="container-fluid" id="ram-1-instax">
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-6" id="instax-description">
+          <p> Taking polaroids at the Pioneers' Reunion Luncheon and Nikkei Cultural Center and Museum, December 2017.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <img src="media/instax.jpg" alt="Fujifilm Instax camera and props" id="instax-image">
+        </div>
+
+
+      </div>
+    </div>
+
+    <hr>
+    <!-- SUMO -->
+
+    <div class="container-fluid" id="ram-1-sumo">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6" id="sumo-image">
+          <img src="media/sumo.jpg" alt="Sumo Ring" id="sumo-img">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6" id="sumo-description">
+          <h3> March of the Giants </h3>
+          <p> The September 2017 Sumo Grand Tournament at the Ryōgoku Kokugikan in Tokyo.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Curry Udon -->
+
+    <div class="container-fluid" id="ram-1-udon">
+      <h3 id="ram-1-udon-title"> Curry Udon Recipe </h3>
+      <br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-5 col-md-2" id="ram-1-udon-ingredients">
+          <ul>
+            <li><b>Ingredients</b></li>
+            <li>onion</li>
+            <li>garlic</li>
+            <li>potato</li>
+            <li>carrot</li>
+            <li>stock</li>
+            <li>sake</li>
+            <li>Glico curry</li>
+            <li>beef</li>
+            <li>udon</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-md-3" id="ram-1-udon-description">
+
+          <ul>
+            <li><b>Directions</b></li>
+            <li>Saute onion, garlic, potato, carrot.</li>
+            <li>Add stock, sake, and Glico curry.</li>
+            <li>Sear beef in skillet.</li>
+            <li>Combine with boiled udon noodles.</li>
+            <li>Garnish.</li>
+          </ul>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-7" id="ram-1-udon-slideshow">
+
+          <div class="slideshow-container">
+
+            <div class="myUdons">
+              <img src="media/udon.jpg" style="width:100%">
+            </div>
+            <div class="myUdons">
+              <img src="media/meat.jpg" style="width:100%">
+            </div>
+            <div class="myUdons">
+              <img src="media/stew.jpg" style="width:100%">
+            </div>
+            <div class="myUdons">
+              <img src="media/curry.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusUdons(-1)">&#10094;</a>
+            <a class="next" onclick="plusUdons(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="circle" onclick="currentUdon(1)"></span>
+            <span class="circle" onclick="currentUdon(2)"></span>
+            <span class="circle" onclick="currentUdon(3)"></span>
+            <span class="circle" onclick="currentUdon(4)"></span>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- Kisyuu -->
+
+      <div class="container-fluid" id="ram-1-kisyuu">
+        <div class="row">
+          <hr>
+          <div class="col-xs-12 col-sm-12 col-md-6" id="kisyuu-image">
+            <img src="media/kisyuu.jpg" alt="Kisyuu-holding-brush" id="kisyuu-img-1">
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6" id="kisyuu-description"> <br> <br>
+            <p> My calligraphy intructor, Kisyuu, doing a performance piece with taiko accompaniment at Sakura Days 2017 in the Van Deusen Botanical Garden.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Japan Unlayered -->
+    <div class="container-fluid" id="ram-1-muji">
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-5 col-md-5" id="ram-1-muji-description"> <br><br>
+          <h3 id="ram-1-muji-title"> Japan Unlayered </h3><br>
+          <p> Muji's Masaaki Kanai tells us about 90° socks, the 80% rule, and a mattress with legs in his talk, <span style="font-style: italic;"> The Antithesis of Consumerism and the Search for a Better Way of Living. </span> </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-7 col-md-7" id="ram-1-muji-slideshow">
+
+          <div class="slideshow-container">
+
+            <div class="myMujis">
+              <img src="media/muji-talk.png" style="width:100%">
+            </div>
+            <div class="myMujis">
+              <img src="media/kanai.jpg" style="width:100%">
+            </div>
+            <div class="myMujis">
+              <img src="media/90-degree.jpg" style="width:100%">
+            </div>
+            <div class="myMujis">
+              <img src="media/muji-logo.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusMujis(-1)">&#10094;</a>
+            <a class="next" onclick="plusMujis(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentMuji(1)"></span>
+            <span class="dot" onclick="currentMuji(2)"></span>
+            <span class="dot" onclick="currentMuji(3)"></span>
+            <span class="dot" onclick="currentMuji(4)"></span>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- Murakami -->
+
+      <div class="container-fluid" id="ram-1-murakami">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+
+            <img src="media/murakami.jpg" alt="Stack of Murakami Books">
+
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6" id="ram-1-murakami-description">
+
+            <h3> An Ordered List of Haruki Murakami Books </h3><br>
+            <ol id='murakami-list'>
+              <li>The Wind-up Bird Chronical (1997)</li>
+              <li>Underground (2000)</li>
+              <li>Norweigian Wood (1987)</li>
+              <li> Kafka on the Shore (2002)</li>
+              <li>A Wild Sheep Chase (1982)</li>
+              <li>The Strange Library (2005)</li>
+              <ol>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- What I use to Study Japanese -->
+
+      <div class="container-fluid" id="ram-1-wiutsj">
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-12 col-md-5" id="ram-1-wiutsj-description">
+            <h3> What I Use to Study Japanese </h3><br>
+
+            <ul>
+              <li><a href="https://vjls-jh.com/">Vancouver Japanese Language School</a></lli>
+                <li><a href="http://www3.nhk.or.jp/news/easy/k10010922421000/k10010922421000.html">NHK News Web Easy</a></li>
+                <li>Kanji Cards</li>
+                <li><a href="https://www.youtube.com/channel/UCBSyd8tXJoEJKIXfrwkPdbA">Japanese with Ammo</a></li>
+                <li>Japanese-English Parallel Fiction</li>
+                <li>Slack</li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-7" id="ram-1-wiutsj-images">
+            <div class="slideshow-container">
+
+              <div class="myWiutsjs">
+                <img src="media/pocket.png" style="width:100%">
+              </div>
+              <div class="myWiutsjs">
+                <img src="media/kanji.jpg" style="width:100%">
+              </div>
+              <div class="myWiutsjs">
+                <img src="media/vjls.png" style="width:100%">
+              </div>
+              <div class="myWiutsjs">
+                <img src="media/nhk.png" style="width:100%">
+              </div>
+              <div class="myWiutsjs">
+                <img src="media/ammo.png" style="width:100%">
+              </div>
+              <div class="myWiutsjs">
+                <img src="media/parallel.jpg" style="width:100%">
+              </div>
+              <div class="myWiutsjs">
+                <img src="media/slack.png" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusWiutsjs(-1)">&#10094;</a>
+              <a class="next" onclick="plusWiutsjs(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="round" onclick="currentWiutsj(1)"></span>
+              <span class="round" onclick="currentWiutsj(2)"></span>
+              <span class="round" onclick="currentWiutsj(3)"></span>
+              <span class="round" onclick="currentWiutsj(4)"></span>
+              <span class="round" onclick="currentWiutsj(5)"></span>
+              <span class="round" onclick="currentWiutsj(6)"></span>
+              <span class="round" onclick="currentWiutsj(7)"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Talisman -->
+
+      <div class="container-fluid" id="ram-1-talisman">
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <img src="media/talisman.jpg" alt="talisman" id="ram-1-talisman-image">
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6" id="ram-1-talisman-description">
+            <p> From the Kanda-myōjin shrine, a talisman to protect electronic devices from harm. </p>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- cup noodles -->
+
+      <div class="container-fluid" id="ram-1-cupnoodle">
+
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-12 col-md-6" id="ram-1-cupnoodle-description">
+            <p> Preparing a custom Cup Noodle at the Ando Momofuku Museum in Yokohama. </p>
+
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <img src="media/cupnoodle.jpg" alt="Making Cup Noodles" id="ram-1-cupnoodle-image">
+          </div>
+
+        </div>
+      </div>
+      <hr>
+
+
+      <!-- up arrow -->
+
+      <div id="up-nav">
+        <a href='#title'>
+          <img src="media/up.png" alt="up">
+        </a>
+      </div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
+<script src="daisy.js"></script>
+
+</html>

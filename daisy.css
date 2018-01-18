@@ -1,0 +1,396 @@
+
+/* mobile */
+
+@media (min-width: 400px) {
+  #bg-vid {
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 50px;
+    top: 65px;
+    left: 50px;
+  }
+}
+
+/* tablet */
+
+@media (min-width: 680px) {
+  #bg-vid {
+    margin-top: -150px;
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 70px;
+    top: 80px;
+    left: 160px;
+  }
+  #intro-description {
+    padding-top: 50px;
+    padding-right: 80px;
+  }
+}
+
+
+/* desktop */
+
+@media (min-width: 970px) {
+  #bg-vid {
+    margin-top: -250px;
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 90px;
+    top: 100px;
+    left: 200px;
+  }
+  #intro-description {
+    padding-top: 80px;
+    padding-right: 150px;
+  }
+}
+* {
+  font-family: helvetica;
+}
+body {
+  background-color: whitesmoke;
+}
+
+#introductions:hover {
+  background-color: whitesmoke;
+}
+
+#experiments:hover {
+  background-color: whitesmoke;
+}
+
+#ramblings:hover {
+  background-color: whitesmoke;
+}
+
+
+/* title style */
+
+#title-container {
+  margin: 0;
+}
+
+#title {
+  padding: 0;
+}
+
+#bg-vid {
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+#title-text {
+  z-index: 1;
+  position: absolute;
+  color: #ffc125;
+}
+
+
+/* label style */
+
+#introductions {
+  background-color: #909090;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+
+/* introduction style */
+#intro-image {
+text-align: center;
+
+}
+#oni {
+  margin: 35px;
+  margin-left: 50px;
+  max-width: 80%;
+
+}
+#intro-description {
+  text-align: center;
+}
+
+#submit {
+  border-radius: 8px;
+}
+
+#submit:hover {
+  background-color: #ffc125;
+}
+
+
+#intro a {
+  color: black;
+}
+
+#intro a:hover {
+  color: #ffc125;
+}
+
+
+/* label style */
+
+#experiments {
+  background-color: #606060;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+
+/* experiments style */
+
+#exp-placeholder {
+  background-color: white;
+  position: relative
+}
+
+#girl-hypothesizing {
+  height: 70%;
+  width: 70%;
+}
+
+#exp-placeholder h2 {
+  position: absolute;
+  color: #ffc125;
+font-size: 4vw;
+  left: 50vw;
+  top: 25vw;
+}
+
+/* label style */
+
+#ramblings {
+  background-color: #505050;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+/* robson style */
+
+#ram-1-robson {
+  padding-top: 30px;
+}
+#robson-description {
+padding-left: 50px;
+}
+
+#robson-img {
+
+  width: 100%;
+}
+
+#robson-map {
+  padding-right: 70px;
+}
+
+#map {
+width: 100%;
+height: 280px;
+margin-top: 100px;
+}
+
+/* instax stye */
+
+#instax-description {
+  padding-top: 110px;
+  text-align: center;
+  padding-left: 80px;
+}
+
+#instax-image {
+padding-top: 30px;
+
+width: 100%;
+}
+
+/* sumo style */
+
+#ram-1-sumo {
+  text-align: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#sumo-img {
+  width: 100%;
+}
+
+#sumo-description {
+ padding-top: 40px;
+}
+
+
+/* udon style */
+
+#ram-1-udon li {
+  text-align: center;
+}
+
+#ram-1-udon-title {
+  text-align: left;
+  text-indent: 80px;
+}
+
+/* The dots/bullets/indicators */
+
+.circle {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .circle:hover {
+  background-color: #717171;
+}
+
+#ram-1-udon li {
+  list-style: none;
+}
+
+/* Kisyu style */
+#ram-1-kisyuu {
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+}
+#kisyuu-img-1 {
+  width: 100%;
+}
+
+/* Muji style */
+
+#ram-1-muji {
+  padding-left: 50px;
+}
+
+#ram-1-muji-title {
+  text-align: left;
+  text-align: center;
+}
+
+#ram-1-muji p {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Murakami style */
+
+#ram-1-murakami-description {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+#ram-1-murakami h3 {
+  text-align: center;
+}
+
+#ram-1-murakami img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+#ram-1-murakami li {
+  padding-left: 30px;
+
+}
+
+/* What I use to study Japanese style */
+
+#ram-1-wiutsj-description {
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+#ram-1-wiutsj-images {
+  padding-top: 20px;
+}
+
+.round {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .round:hover {
+  background-color: #717171;
+}
+
+
+/* Talisman style */
+
+#ram-1-talisman-description {
+  padding: 100px;
+}
+
+#ram-1-talisman-image {
+  width: 100%;
+}
+
+/* Cup Noodle style */
+#ram-1-cupnoodle-description {
+  padding: 80px;
+
+}
+
+#ram-1-cupnoodle-image {
+
+  width: 100%;
+}
+
+/* Constant slideshow styling */
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: blue;
+}
+.next {
+  right: 0;
+}
+
+/* up navigation */
+
+#up-nav {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+}
