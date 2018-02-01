@@ -1,53 +1,3 @@
-
-/* mobile */
-
-@media (min-width: 400px) {
-  #bg-vid {
-    margin-bottom: -10px;
-  }
-  #title-text {
-    font-size: 50px;
-    top: 65px;
-    left: 50px;
-  }
-}
-
-/* tablet */
-
-@media (min-width: 680px) {
-  #bg-vid {
-    margin-top: -150px;
-    margin-bottom: -10px;
-  }
-  #title-text {
-    font-size: 70px;
-    top: 80px;
-    left: 160px;
-  }
-  #intro-description {
-    padding-top: 50px;
-    padding-right: 80px;
-  }
-}
-
-
-/* desktop */
-
-@media (min-width: 970px) {
-  #bg-vid {
-    margin-top: -250px;
-    margin-bottom: -10px;
-  }
-  #title-text {
-    font-size: 90px;
-    top: 100px;
-    left: 200px;
-  }
-  #intro-description {
-    padding-top: 80px;
-    padding-right: 150px;
-  }
-}
 * {
   font-family: helvetica;
 }
@@ -70,26 +20,29 @@ body {
 
 /* title style */
 
-#title-container {
-  margin: 0;
-}
-
-#title {
-  padding: 0;
-}
-
 #bg-vid {
   width: 100%;
   z-index: 0;
   position: relative;
 }
 
-#title-text {
+.title-box {
+  position: relative;
+}
+
+.header-1 {
   z-index: 1;
   position: absolute;
   color: #ffc125;
+  left: 0;
+  opacity: 0;
+  transition: all 4s ease;
 }
 
+.move-box {
+  left: 50px;
+  opacity: 1;
+}
 
 /* label style */
 
@@ -116,11 +69,12 @@ text-align: center;
   text-align: center;
 }
 
-#submit {
+
+.submit {
   border-radius: 8px;
 }
 
-#submit:hover {
+.submit:hover {
   background-color: #ffc125;
 }
 
@@ -172,7 +126,33 @@ font-size: 4vw;
   padding-top: 10px;
   padding-left: 20px;
 }
-/* robson style */
+
+/* Fuji style */
+
+#ram-1-fuji {
+    padding-top: 30px;
+}
+
+#ram-1-fuji-description {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.ball {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .ball:hover {
+  background-color: #717171;
+}
+
+/* Robson style */
 
 #ram-1-robson {
   padding-top: 30px;
@@ -201,14 +181,14 @@ margin-top: 100px;
 #instax-description {
   padding-top: 110px;
   text-align: center;
-  padding-left: 80px;
 }
 
 #instax-image {
 padding-top: 30px;
-
+padding-right: 40px;
 width: 100%;
 }
+
 
 /* sumo style */
 
@@ -225,6 +205,7 @@ width: 100%;
 
 #sumo-description {
  padding-top: 40px;
+padding-right: 60px;
 }
 
 
@@ -259,6 +240,11 @@ width: 100%;
   list-style: none;
 }
 
+#ram-1-udon-slideshow {
+
+  padding-left: 70px;
+}
+
 /* Kisyu style */
 #ram-1-kisyuu {
   text-align: center;
@@ -267,13 +253,12 @@ width: 100%;
 }
 #kisyuu-img-1 {
   width: 100%;
+
 }
 
 /* Muji style */
 
-#ram-1-muji {
-  padding-left: 50px;
-}
+
 
 #ram-1-muji-title {
   text-align: left;
@@ -282,6 +267,7 @@ width: 100%;
 
 #ram-1-muji p {
   text-align: center;
+    padding-left: 70px;
 }
 
 .dot {
@@ -324,10 +310,13 @@ width: 100%;
 #ram-1-wiutsj-description {
   padding-top: 60px;
   padding-left: 40px;
+
 }
 
 #ram-1-wiutsj-images {
   padding-top: 20px;
+
+
 }
 
 .round {
@@ -345,7 +334,7 @@ width: 100%;
 }
 
 
-/* Talisman style */
+/* talisman style */
 
 #ram-1-talisman-description {
   padding: 100px;
@@ -355,18 +344,20 @@ width: 100%;
   width: 100%;
 }
 
-/* Cup Noodle style */
+/* cup Noodle style */
 #ram-1-cupnoodle-description {
-  padding: 80px;
+  padding-top: 100px;
+  padding-right: 120px;
+  text-align: center;
 
 }
 
 #ram-1-cupnoodle-image {
-
   width: 100%;
+padding-right: 30px;
 }
 
-/* Constant slideshow styling */
+/* constant slideshow styling */
 
 .slideshow-container {
   max-width: 500px;
@@ -393,4 +384,54 @@ width: 100%;
   bottom: 10px;
   right: 10px;
   z-index: 99;
+}
+
+/* mobile */
+
+@media (min-width: 400px) {
+  #bg-vid {
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 50px;
+    top: 65px;
+    left: 50px;
+  }
+}
+
+/* tablet */
+
+@media (min-width: 680px) {
+  #bg-vid {
+    margin-top: -150px;
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 70px;
+    top: 80px;
+    left: 160px;
+  }
+  #intro-description {
+    padding-top: 50px;
+    padding-right: 80px;
+  }
+}
+
+
+/* desktop */
+
+@media (min-width: 970px) {
+  #bg-vid {
+    margin-top: -250px;
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 90px;
+    top: 100px;
+    left: 200px;
+  }
+  #intro-description {
+    padding-top: 80px;
+    padding-right: 150px;
+  }
 }

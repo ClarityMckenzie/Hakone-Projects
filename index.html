@@ -10,7 +10,7 @@
 <meta property="og:title" content="Hakone Projects" />
 
 <meta property="og:description" content="A work in progress" />
-<meta property="og:image" content="media/hp-splash.png" />
+<meta property="og:image" content="./media/hp-splash.png" />
 
 <!-- imports -->
 
@@ -29,10 +29,9 @@
 <body>
   <!-- title and ink video -->
 
-  <div id="title">
-    <video src="media/inkbkg.mov" loop autoplay id="bg-vid">
-          </video>
-    <h1 id="title-text">HAKONE <br> &nbsp;&nbsp;&nbsp;&nbsp;PROJECTS</h1>
+  <div class="title-box">
+    <video src="media/inkbkg.mov" loop autoplay id="bg-vid"></video>
+    <h1 id="title-text" class="header-1">HAKONE <br> &nbsp;&nbsp;&nbsp;&nbsp;PROJECTS</h1>
   </div>
   <!-- introductions -->
 
@@ -67,7 +66,7 @@
 
         <form id="comment-form">
           <textarea rows="3" cols="30" id="message" name="message"></textarea><br>
-          <input type="submit" id="submit">
+          <input type="submit" class="submit">
         </form>
         <br>
 
@@ -84,7 +83,7 @@
   <div class="container-fluid" id="exp-placeholder">
     <div class="row">
       <img src="media/thinking.jpg" alt="girl thinking" id="girl-hypothesizing">
-      <h2> Hypothesizing... </h2>
+      <h2> Hypothesizing</h2>
 
     </div>
   </div>
@@ -93,6 +92,51 @@
     <h3 id="heading-text">RAMBLINGS</h3>
   </div>
   <div class="container-fluid" id="ram-1">
+
+    <!-- Mt Fuji -->
+    <div class="container-fluid" id="ram-1-fuji">
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6" id="ram-1-fuji-description"> <br><br>
+          <p>I traveled 7636KM to swim in red wine</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6" id="ram-1-fuji-slideshow">
+
+          <div id="fuji-slideshow-container" class="slideshow-container">
+
+            <div class="myFujis">
+              <img src="media/fuji.jpg" style="width:100%">
+            </div>
+            <div class="myFujis">
+              <img src="media/map.jpg" style="width:100%">
+            </div>
+            <div class="myFujis">
+              <img src="media/ship.jpg" style="width:100%">
+            </div>
+            <div class="myFujis">
+              <img src="media/wine.jpg" style="width:100%">
+            </div>
+
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+          <br>
+
+          <div id="fuji-balls-container"
+          style="text-align:center">
+            <span id="ball1" class="ball"></span>
+            <span id="ball2" class="ball"></span>
+            <span
+            id="ball3" class="ball"></span>
+            <span
+            id="ball4" class="ball"></span>
+
+          </div>
+
+        </div>
+      </div>
+      <hr>
 
     <!-- ROBSON -->
 
@@ -238,12 +282,12 @@
     <div class="container-fluid" id="ram-1-muji">
 
       <div class="row">
-        <div class="col-xs-12 col-sm-5 col-md-5" id="ram-1-muji-description"> <br><br>
+        <div class="col-xs-12 col-sm-6 col-md-6" id="ram-1-muji-description"> <br><br>
           <h3 id="ram-1-muji-title"> Japan Unlayered </h3><br>
           <p> Muji's Masaaki Kanai tells us about 90° socks, the 80% rule, and a mattress with legs in his talk, <span style="font-style: italic;"> The Antithesis of Consumerism and the Search for a Better Way of Living. </span> </p>
         </div>
 
-        <div class="col-xs-12 col-sm-7 col-md-7" id="ram-1-muji-slideshow">
+        <div class="col-xs-12 col-sm-6 col-md-6" id="ram-1-muji-slideshow">
 
           <div class="slideshow-container">
 
@@ -305,7 +349,7 @@
       <div class="container-fluid" id="ram-1-wiutsj">
         <div class="row">
 
-          <div class="col-xs-12 col-sm-12 col-md-5" id="ram-1-wiutsj-description">
+          <div class="col-xs-12 col-sm-12 col-md-6" id="ram-1-wiutsj-description">
             <h3> What I Use to Study Japanese </h3><br>
 
             <ul>
@@ -318,7 +362,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-7" id="ram-1-wiutsj-images">
+          <div class="col-xs-12 col-sm-12 col-md-6" id="ram-1-wiutsj-images">
             <div class="slideshow-container">
 
               <div class="myWiutsjs">
