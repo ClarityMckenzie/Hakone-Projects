@@ -137,6 +137,9 @@ font-size: 4vw;
   padding-top: 80px;
   text-align: center;
 }
+#ram-1-fuji-slideshow {
+  padding-right: 70px;
+}
 
 .ball {
   cursor: pointer;
@@ -257,8 +260,6 @@ padding-right: 60px;
 }
 
 /* Muji style */
-
-
 
 #ram-1-muji-title {
   text-align: left;
